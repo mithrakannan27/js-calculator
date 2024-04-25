@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div class="whole">
+    <input type="text" id="display">
+    <div class="line">
+        <button id="ac" class="a" onclick="allclear()">AC</button>
+        <button id="del" class="a" onclick="del()">DEL</button>
+        <button id="per" class="a" onclick="display('%')">%</button>
+        <button id="div" class="b" onclick="display('/')">/</button>
+    </div>
+    <div class="line">
+        <button id="seven" class="c" onclick="display('7')">7</button>
+        <button id="eight" class="c" onclick="display('8')">8</button>
+        <button id="nine" class="c" onclick="display('9')">9</button>
+        <button id="multi" class="b" onclick="display('*')">*</button>
+    </div>
+    <div class="line">
+        <button id="four" class="c" onclick="display('4')">4</button>
+        <button id="five" class="c" onclick="display('5')">5</button>
+        <button id="six" class="c" onclick="display('6')">6</button>
+        <button id="sub" class="b" onclick="display('-')">-</button>
+    </div>
+    <div class="line">
+        <button id="one" class="c" onclick="display('1')">1</button>
+        <button id="two" class="c" onclick="display('2')">2</button>
+        <button id="three" class="c" onclick="display('3')">3</button>
+        <button id="add" class="b" onclick="display('+')">+</button>
+    </div>
+    <div class="linea">
+        <button id="zero" onclick="display('0')">0</button>
+        <button id="dot" class="c" onclick="display('.')">.</button>
+        <button id="equal" class="b" onclick="calc()">=</button>
+    </div>
+    <script src="calc.js" ></script>
+</div>
+</body>
+</html>
